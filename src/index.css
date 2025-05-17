@@ -1,0 +1,133 @@
+@import  url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-dark-300 text-white font-sans m-0 p-0;
+}
+
+.glass {
+  @apply bg-opacity-10 backdrop-blur-lg bg-white border border-white/20;
+}
+
+.skill-badge {
+  @apply px-3 py-1 rounded-full text-sm font-medium bg-primary-700 text-white transition-all duration-300;
+}
+
+.skill-badge:hover {
+  @apply bg-primary-600 transform -translate-y-1;
+}
+
+.nav-link {
+  @apply relative px-3 py-2 text-white/70 hover:text-white transition-colors duration-300 ease-in-out;
+}
+
+.nav-link::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300 ease-in-out;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+.project-card {
+  @apply relative overflow-hidden rounded-xl glass p-6 transition-all duration-500;
+}
+
+.project-card:hover {
+  @apply transform-gpu scale-[1.02] bg-opacity-20;
+}
+
+.contact-input {
+  @apply w-full bg-dark-100 border border-dark-100 focus:border-primary-500 rounded-lg px-4 py-3 text-white transition-colors duration-300 focus:outline-none;
+}
+
+.button-primary {
+  @apply px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-all duration-300 flex items-center justify-center transform hover:-translate-y-1;
+}
+
+.button-outline {
+  @apply px-6 py-3 border border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white rounded-lg font-medium transition-all duration-300 flex items-center justify-center;
+}
+
+.social-icon {
+  @apply w-10 h-10 rounded-full text-white/70 hover:text-white hover:bg-primary-700 transition-all duration-300;
+}
+
+.skill-bar {
+  @apply h-2 bg-dark-100 rounded-full overflow-hidden relative;
+}
+
+.skill-progress {
+  @apply h-full absolute top-0 left-0 rounded-full;
+  background: linear-gradient(90deg, #4338ca, #6366f1);
+}
+
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-3d:hover {
+  transform: translateZ(10px) rotateX(5deg) rotateY(5deg);
+}
+
+.card-3d-content {
+  transform: translateZ(30px);
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background: linear-gradient(-45deg, #0ea5e9, #3b82f6, #8b5cf6, #0ea5e9);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.cursor {
+  @apply inline-block w-3 h-5 bg-primary-500 ml-1 animate-pulse;
+}
+
+.canvas-container {
+  @apply absolute inset-0 z-0 bg-dark-300 opacity-75;
+}
+
+.glow {
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
+}
+
+.glow:hover {
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.8);
+}
+ 
