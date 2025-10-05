@@ -74,7 +74,7 @@ const Home = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.2, duration: 0.8 }}
               >
-                <div className="text-sm font-mono text-white/70">// code snippet</div>
+                <div className="text-sm font-mono text-white/70">// Output</div>
                 <pre className="text-xs text-green-400">
                   {`function hello() {
   return "Welcome!";
