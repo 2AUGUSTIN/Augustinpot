@@ -77,7 +77,7 @@ const Home = () => {
                 <div className="text-sm font-mono text-white/70">// Output</div>
                 <pre className="text-xs text-green-400">
                   {`function hello() {
-  return "Welcome! to hello<br> Dev Allan";
+  return "Augustin";
 }`}
                 </pre>
               </motion.div>
