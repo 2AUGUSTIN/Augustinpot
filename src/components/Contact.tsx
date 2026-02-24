@@ -52,8 +52,8 @@ const Contact = () => {
     {
       icon: <Mail className="w-5 h-5 text-primary-500" />,
       label: 'Email',
-      value: 'singizimanaaugustin23@gmail.com',
-      link: 'mailto:singizimanaaugustin23@gmail.com'
+      value: 'allanaugustin58@gmail.com',
+      link: 'mailto:allanaugustin58@gmail.com'
     },
     {
       icon: <Phone className="w-5 h-5 text-primary-500" />,
@@ -64,7 +64,7 @@ const Contact = () => {
     {
       icon: <MapPin className="w-5 h-5 text-primary-500" />,
       label: 'Location',
-      value: 'Kigali, Ngororero, Rwanda',
+      value: 'Kigali, Ngororero, Rwanda,',
       link: '#'
     }
   ];
